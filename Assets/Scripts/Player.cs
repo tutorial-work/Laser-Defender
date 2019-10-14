@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     float xMax;
     float yMin;
     float yMax;
+    bool firing;
 
     // Start is called before the first frame update
     void Start()
@@ -34,11 +35,11 @@ public class Player : MonoBehaviour
 
     private void Fire()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire"))
         {
             firingCoroutine = StartCoroutine(FireContinuously());
         }
-        if (Input.GetButtonUp("Fire1"))
+        if (Input.GetButtonUp("Fire"))
         {
             StopCoroutine(firingCoroutine);
         }

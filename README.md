@@ -5,4 +5,4 @@ This repository features a Galaga-like game made in Unity; it was made following
 *currently unavailable*
 
 ### TODO 
-- Complete Tutorial Series
+- Complete Tutorial Series @ Video: "100. WaveConfig For Path & Speed"

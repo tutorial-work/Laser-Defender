@@ -34,8 +34,6 @@ public class EnemyPathing : MonoBehaviour
             float movementThisFrame = waveConfig.GetMoveSpeed() * Time.deltaTime;
             
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, movementThisFrame);
-            Debug.Log("transform.position: " + transform.position);
-            Debug.Log("targetPosition: " + targetPosition);
 
             if (transform.position == targetPosition)
             {
